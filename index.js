@@ -248,7 +248,7 @@ client.on('message', async (message) => {
             displayServiceMenu(message);
         } else {
             // Welcome message for new users
-            await message.reply('Selamat datang di layanan RT 17 Desa Badak Baru. Untuk mengurus keperluan, silahkan masukkan NIK anda dengan benar.');
+            await message.reply('Selamat datang di layanan RT 17 . Untuk mengurus keperluan, silahkan masukkan NIK anda dengan benar.');
         }
     } catch (error) {
         console.error('Error handling message:', error);
