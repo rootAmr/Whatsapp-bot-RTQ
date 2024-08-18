@@ -1,0 +1,28 @@
+{
+  "name": "openwa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maulana",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "docx": "^8.5.0",
+    "docx-templates": "^4.13.0",
+    "docxtemplater": "^3.49.1",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "pizzip": "^3.1.7",
+    "puppeteer": "^22.14.0",
+    "qrcode": "^1.5.3",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.25.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
