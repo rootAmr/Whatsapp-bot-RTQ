@@ -31,14 +31,6 @@ Layanan sudah dipilih. Pilih opsi:
 Ketik nomor opsi untuk memilih.`);
 }
 
-// function displayPostSubmissionMenu(message) {
-//     message.reply(`Pengajuan berhasil. Pilih opsi:
-
-// 0. Kembali ke Layanan
-// 99. Logout
-
-// Ketik nomor opsi untuk memilih.`);
-// }
 
 function displayResidentDetails(resident, service = '') {
     return `NIK sudah valid. Berikut adalah detail Anda:
