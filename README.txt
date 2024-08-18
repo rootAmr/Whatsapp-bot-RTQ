@@ -1,36 +1,67 @@
 
-# WhatsApp Bot v1.0
+# WhatsApp Bot v1.0 📱🤖
 
-## How to Run the Program
+Welcome to the **WhatsApp Bot v1.0** project! This bot automates the process of validating residents' information and generating official documents via WhatsApp.
 
-1. Navigate to the project directory.
-2. Run `npm install` and `npm update`.
-3. Start the bot with `node index.js`.
+## 🚀 How to Run the Program
 
-## User Workflow
+1. **Navigate** to the project directory:
+   ```bash
+   cd /path/to/your/project
+   ```
+2. **Install** dependencies:
+   ```bash
+   npm install
+   npm update
+   ```
+3. **Start** the bot:
+   ```bash
+   node index.js
+   ```
 
-1. **NIK Validation**: The user will be validated using their NIK.
-2. **Service Selection**: If the NIK is correct, the user will be prompted to choose the service they want to apply for.
-3. **Submission**: After selecting the service, the user will proceed with the application.
-4. **Additional Options or Logout**: The user will then be presented with additional options or can choose to log out.
+## 🧑‍💼 User Workflow
 
-## Admin Workflow
+1. **NIK Validation**:
+   - Users will be prompted to enter their **NIK** (National Identity Number) for validation.
+2. **Service Selection**:
+   - Upon successful validation, users will select the desired service from a menu.
+3. **Submission**:
+   - After selecting a service, users proceed with the application process.
+4. **Additional Options or Logout**:
+   - Once the submission is completed, users can choose additional options or log out.
 
-1. **Notification**: The admin (Ketua RT) will receive a notification from the bot regarding the user's application.
-2. **Approval**: The admin will approve the application to generate a letter with a unique letter number.
+## 🛠️ Admin Workflow
 
-## Directory Structure
+1. **Notification**:
+   - The admin (**Ketua RT**) receives a notification when a user submits an application.
+2. **Approval**:
+   - The admin approves the application, triggering the generation of a letter with a unique letter number.
 
-- `data_warga.csv`: Contains resident data in CSV format. [Created manually following the provided attributes]
-- `sessions.json`: Stores login data of residents validated by NIK. [Generated automatically by the system]
-- `submissions.json`: Tracks service requests to prevent spam, limited to 3 requests per day. [Generated automatically by the system]
-- `submissions/`: Contains completed letters based on `template.docx`. [Generated automatically by the system]
-- `template.docx`: The letter template. [Created manually following the specified format]
+## 📂 Directory Structure
 
-## Additional Information
+- **`data_warga.csv`**: 
+  - Contains resident data in CSV format.
+  - _Created manually with attributes like NAMA, NIK, JENIS KELAMIN, etc._
+- **`sessions.json`**:
+  - Stores login data for residents validated by NIK.
+  - _Generated automatically by the system._
+- **`submissions.json`**:
+  - Tracks service requests to prevent spam (limited to 3 requests per day).
+  - _Generated automatically by the system._
+- **`submissions/`**:
+  - Contains completed letters generated from `template.docx`.
+  - _Generated automatically by the system._
+- **`template.docx`**:
+  - The letter template used for generating official documents.
+  - _Created manually following the specified format._
 
-- Ensure `data_warga.csv` is populated with the correct attributes.
-- The system automatically generates `sessions.json` and `submissions.json`.
-- Service request letters are generated using `template.docx` and stored in the `submissions` folder.
+## 🔍 Additional Information
+
+- **Data Preparation**: 
+  - Ensure that `data_warga.csv` is correctly populated with the required attributes.
+- **Automatic Generation**: 
+  - The system automatically generates `sessions.json` and `submissions.json`.
+- **Document Storage**:
+  - Generated letters are saved in the `submissions` folder, following the format specified in `template.docx`.
 
 ---
